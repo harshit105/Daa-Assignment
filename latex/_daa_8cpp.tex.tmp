@@ -1,0 +1,700 @@
+\hypertarget{_daa_8cpp}{}\section{Daa.\+cpp File Reference}
+\label{_daa_8cpp}\index{Daa.\+cpp@{Daa.\+cpp}}
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+Include dependency graph for Daa.\+cpp\+:
+% FIG 0
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpoint}{point}
+\begin{DoxyCompactList}\small\item\em defination of a point \end{DoxyCompactList}\item 
+struct \hyperlink{structsegment}{segment}
+\begin{DoxyCompactList}\small\item\em Segment of a line passing through (x1,y1) and (x2,y2) \end{DoxyCompactList}\item 
+class \hyperlink{class_status_node}{Status\+Node}
+\begin{DoxyCompactList}\small\item\em class for status data structure \end{DoxyCompactList}\item 
+class \hyperlink{class_node}{Node}
+\begin{DoxyCompactList}\small\item\em class for queue data structure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_daa_8cpp_ae1d1ec9482079231e898236e2b23c9ba}{ll}~long long
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_daa_8cpp_a4d692e3ea30156866a93a3d87a01e93b}{in\+Order1} (\hyperlink{class_status_node}{Status\+Node} $\ast$root)
+\begin{DoxyCompactList}\small\item\em inorder traversal of status \end{DoxyCompactList}\item 
+double \hyperlink{_daa_8cpp_a9c4112ef747c95bbafe06b06b10d926c}{finder} (\hyperlink{structsegment}{segment} s, double x)
+\begin{DoxyCompactList}\small\item\em To find y intercept of any line with the sweep line. \end{DoxyCompactList}\item 
+int \hyperlink{_daa_8cpp_a37537519c715cf20a83194f5109db8bb}{depth} (\hyperlink{class_node}{Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Finding depth of a node in the tree. depth is 1 for leaf. \end{DoxyCompactList}\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{_daa_8cpp_a9a41a4d4790ea8c068b1e72cfbd3db03}{create} (\hyperlink{structpoint}{point} p)
+\begin{DoxyCompactList}\small\item\em Create a node. \end{DoxyCompactList}\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{_daa_8cpp_aadfd68f65ad98aaca6e0cae78f1a557d}{Left\+Rotate} (\hyperlink{class_node}{Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Left rotation for balancing tree. \end{DoxyCompactList}\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{_daa_8cpp_a04d0f63ecb015ca2249c343fa1049982}{Rotate\+Right} (\hyperlink{class_node}{Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Right rotation for balancing. \end{DoxyCompactList}\item 
+int \hyperlink{_daa_8cpp_a890a8f733ec3314ab59be957b1a47ada}{check} (\hyperlink{class_node}{Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Check if the node is balanced or not. \end{DoxyCompactList}\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{_daa_8cpp_a5fee8c5d2d1d7bfad2f12fccc8553a6a}{insert} (\hyperlink{class_node}{Node} $\ast$t, \hyperlink{structpoint}{point} p)
+\begin{DoxyCompactList}\small\item\em insert function \end{DoxyCompactList}\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{_daa_8cpp_a69e6a83fb01564768530bdba4e8e8410}{min\+Node} (\hyperlink{class_node}{Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Finding the minimum node in a subtree. \end{DoxyCompactList}\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{_daa_8cpp_a119c3cf87f66cae269d1deeb9fdfcd61}{max\+Node} (\hyperlink{class_node}{Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Finding the maximum node in a subtree. \end{DoxyCompactList}\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{_daa_8cpp_a07f410792d9118409d70f5ed09378998}{delete\+Node} (\hyperlink{class_node}{Node} $\ast$root, \hyperlink{structpoint}{point} p)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_node}{Node} delete function. \end{DoxyCompactList}\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{_daa_8cpp_a1921fa8808c10944e442aca9567f5ed5}{successor} (\hyperlink{class_node}{Node} $\ast$root, \hyperlink{class_node}{Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Find the next higher node for the given node. \end{DoxyCompactList}\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{_daa_8cpp_af620efbe679c0fb2e8a9762657e753fb}{predecessor} (\hyperlink{class_node}{Node} $\ast$root, \hyperlink{class_node}{Node} $\ast$t, \hyperlink{class_node}{Node} $\ast$\hyperlink{_daa_8cpp_a3159a6cb11510978af2025ca2ed85745}{pred})
+\begin{DoxyCompactList}\small\item\em Find the next lower node for the given node. \end{DoxyCompactList}\item 
+int \hyperlink{_daa_8cpp_a28508738fee755eee7e244e423d2d1a1}{depth1} (\hyperlink{class_status_node}{Status\+Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em depth for status tree \end{DoxyCompactList}\item 
+void \hyperlink{_daa_8cpp_aa2d73aa1faa2bc5d4d5d72631767b1fa}{inter} (\hyperlink{structsegment}{segment} s1, \hyperlink{structsegment}{segment} s2)
+\begin{DoxyCompactList}\small\item\em Find intersection point of two line segments. \end{DoxyCompactList}\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_a853e527729a5e6601dc431d9d89e0359}{create1} (\hyperlink{structsegment}{segment} ls, double x, double y)
+\begin{DoxyCompactList}\small\item\em status create \end{DoxyCompactList}\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_a06bc3195780d7353aea3f1d1d7cefe0b}{Left\+Rotate1} (\hyperlink{class_status_node}{Status\+Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em left rotation for balancing \end{DoxyCompactList}\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_a682a707a24efc804a0e6c6c0c3c647d4}{Rotate\+Right1} (\hyperlink{class_status_node}{Status\+Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em right rotation for balancing \end{DoxyCompactList}\item 
+int \hyperlink{_daa_8cpp_a4f44344b92094e2a6ce0498051b45897}{check1} (\hyperlink{class_status_node}{Status\+Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em returns if the node is balanced \end{DoxyCompactList}\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_a3c4a0e276db43207c9b4bea53425bf3d}{insert1} (\hyperlink{class_status_node}{Status\+Node} $\ast$t, \hyperlink{structsegment}{segment} ls, double x, double y)
+\begin{DoxyCompactList}\small\item\em Insert function. \end{DoxyCompactList}\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_a1e97c8b9bc5506e9838c1f0b969a6b0c}{min\+Node1} (\hyperlink{class_status_node}{Status\+Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em find the minimum node in a subtree \end{DoxyCompactList}\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_ae724d8c86e91376430d5443b9256e55a}{max\+Node1} (\hyperlink{class_status_node}{Status\+Node} $\ast$t)
+\begin{DoxyCompactList}\small\item\em find the maximum node in a subtree \end{DoxyCompactList}\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_a0eb152b9c1c879ed9ae23cb49678476d}{successor1} (\hyperlink{class_status_node}{Status\+Node} $\ast$root, \hyperlink{class_status_node}{Status\+Node} $\ast$t, double x, double y)
+\begin{DoxyCompactList}\small\item\em find the next higher node \end{DoxyCompactList}\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_a06d6078806966cbe7006c7fe048f5813}{predecessor1} (\hyperlink{class_status_node}{Status\+Node} $\ast$root, \hyperlink{class_status_node}{Status\+Node} $\ast$t, \hyperlink{class_status_node}{Status\+Node} $\ast$\hyperlink{_daa_8cpp_a3159a6cb11510978af2025ca2ed85745}{pred}, double x, double y)
+\begin{DoxyCompactList}\small\item\em find the next lower node \end{DoxyCompactList}\item 
+void \hyperlink{_daa_8cpp_a9e38fd5165cf85903827998585ada60a}{in\+Order} (\hyperlink{class_node}{Node} $\ast$root)
+\begin{DoxyCompactList}\small\item\em inorder traversal for queue \end{DoxyCompactList}\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_af350f0dbe88c30af22be21149021ef22}{delete\+Status\+Node1} (\hyperlink{class_status_node}{Status\+Node} $\ast$root, \hyperlink{structsegment}{segment} ls, double x, double y)
+\begin{DoxyCompactList}\small\item\em deletes a status node \end{DoxyCompactList}\item 
+int \hyperlink{_daa_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em main function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_daa_8cpp_af7f8f4a4e39e09fdb5e9f02330ecabef}{points} =0
+\item 
+int \hyperlink{_daa_8cpp_a8f742a514df155060c3a2cc0457680a9}{remaining} =0
+\item 
+int \hyperlink{_daa_8cpp_a617a47c70795bcff659815ad0efd2266}{counter} =0
+\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_a30ec10c21d5b68b41588e57dc86d13f0}{inserted}
+\begin{DoxyCompactList}\small\item\em for storing the latest line segment inserted. \end{DoxyCompactList}\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_ac60530ff5b2c73e3c3f5536cf63d8d71}{deleted}
+\begin{DoxyCompactList}\small\item\em for storing the latest line segment deleted. \end{DoxyCompactList}\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_af4a0eced0b119c2e71e14e734709c96c}{root2} =N\+U\+LL
+\begin{DoxyCompactList}\small\item\em Root of the tree for status queue. \end{DoxyCompactList}\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{_daa_8cpp_a04b069144d927df3c1d330b587c16e36}{root1} =N\+U\+LL
+\begin{DoxyCompactList}\small\item\em Root of the tree for event queue. \end{DoxyCompactList}\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_a3159a6cb11510978af2025ca2ed85745}{pred}
+\item 
+\hyperlink{class_status_node}{Status\+Node} $\ast$ \hyperlink{_daa_8cpp_affbaa5a4441943c51c582ebc466ea5e9}{succ}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_daa_8cpp_ae1d1ec9482079231e898236e2b23c9ba}\label{_daa_8cpp_ae1d1ec9482079231e898236e2b23c9ba}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!ll@{ll}}
+\index{ll@{ll}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{ll}{ll}}
+{\footnotesize\ttfamily \#define ll~long long}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_daa_8cpp_a890a8f733ec3314ab59be957b1a47ada}\label{_daa_8cpp_a890a8f733ec3314ab59be957b1a47ada}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!check@{check}}
+\index{check@{check}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily int check (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Check if the node is balanced or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \hyperlink{class_node}{Node} whose balance is to be found. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a4f44344b92094e2a6ce0498051b45897}\label{_daa_8cpp_a4f44344b92094e2a6ce0498051b45897}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!check1@{check1}}
+\index{check1@{check1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{check1()}{check1()}}
+{\footnotesize\ttfamily int check1 (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+returns if the node is balanced 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & find balance of node t. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a9a41a4d4790ea8c068b1e72cfbd3db03}\label{_daa_8cpp_a9a41a4d4790ea8c068b1e72cfbd3db03}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!create@{create}}
+\index{create@{create}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ create (\begin{DoxyParamCaption}\item[{\hyperlink{structpoint}{point}}]{p }\end{DoxyParamCaption})}
+
+
+
+Create a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a853e527729a5e6601dc431d9d89e0359}\label{_daa_8cpp_a853e527729a5e6601dc431d9d89e0359}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!create1@{create1}}
+\index{create1@{create1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{create1()}{create1()}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ create1 (\begin{DoxyParamCaption}\item[{\hyperlink{structsegment}{segment}}]{ls,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+status create 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ls} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status\+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a07f410792d9118409d70f5ed09378998}\label{_daa_8cpp_a07f410792d9118409d70f5ed09378998}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!delete\+Node@{delete\+Node}}
+\index{delete\+Node@{delete\+Node}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{delete\+Node()}{deleteNode()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ delete\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{root,  }\item[{\hyperlink{structpoint}{point}}]{p }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_node}{Node} delete function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_af350f0dbe88c30af22be21149021ef22}\label{_daa_8cpp_af350f0dbe88c30af22be21149021ef22}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!delete\+Status\+Node1@{delete\+Status\+Node1}}
+\index{delete\+Status\+Node1@{delete\+Status\+Node1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{delete\+Status\+Node1()}{deleteStatusNode1()}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ delete\+Status\+Node1 (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{root,  }\item[{\hyperlink{structsegment}{segment}}]{ls,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+deletes a status node 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & \\
+\hline
+{\em ls} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status\+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a37537519c715cf20a83194f5109db8bb}\label{_daa_8cpp_a37537519c715cf20a83194f5109db8bb}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!depth@{depth}}
+\index{depth@{depth}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{depth()}{depth()}}
+{\footnotesize\ttfamily int depth (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Finding depth of a node in the tree. depth is 1 for leaf. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & node whose depth is to be found. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a28508738fee755eee7e244e423d2d1a1}\label{_daa_8cpp_a28508738fee755eee7e244e423d2d1a1}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!depth1@{depth1}}
+\index{depth1@{depth1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{depth1()}{depth1()}}
+{\footnotesize\ttfamily int depth1 (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+depth for status tree 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \hyperlink{class_node}{Node} whose depth is to be found. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a9c4112ef747c95bbafe06b06b10d926c}\label{_daa_8cpp_a9c4112ef747c95bbafe06b06b10d926c}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!finder@{finder}}
+\index{finder@{finder}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{finder()}{finder()}}
+{\footnotesize\ttfamily double finder (\begin{DoxyParamCaption}\item[{\hyperlink{structsegment}{segment}}]{s,  }\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+To find y intercept of any line with the sweep line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & segment whose intercept is to be found. \\
+\hline
+{\em x} & x coordinate of segment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a9e38fd5165cf85903827998585ada60a}\label{_daa_8cpp_a9e38fd5165cf85903827998585ada60a}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!in\+Order@{in\+Order}}
+\index{in\+Order@{in\+Order}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{in\+Order()}{inOrder()}}
+{\footnotesize\ttfamily void in\+Order (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{root }\end{DoxyParamCaption})}
+
+
+
+inorder traversal for queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_daa_8cpp_a4d692e3ea30156866a93a3d87a01e93b}\label{_daa_8cpp_a4d692e3ea30156866a93a3d87a01e93b}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!in\+Order1@{in\+Order1}}
+\index{in\+Order1@{in\+Order1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{in\+Order1()}{inOrder1()}}
+{\footnotesize\ttfamily void in\+Order1 (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{root }\end{DoxyParamCaption})}
+
+
+
+inorder traversal of status 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_daa_8cpp_a5fee8c5d2d1d7bfad2f12fccc8553a6a}\label{_daa_8cpp_a5fee8c5d2d1d7bfad2f12fccc8553a6a}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!insert@{insert}}
+\index{insert@{insert}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ insert (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{t,  }\item[{\hyperlink{structpoint}{point}}]{p }\end{DoxyParamCaption})}
+
+
+
+insert function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a3c4a0e276db43207c9b4bea53425bf3d}\label{_daa_8cpp_a3c4a0e276db43207c9b4bea53425bf3d}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!insert1@{insert1}}
+\index{insert1@{insert1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{insert1()}{insert1()}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ insert1 (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{t,  }\item[{\hyperlink{structsegment}{segment}}]{ls,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+Insert function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+{\em ls} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status\+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_aa2d73aa1faa2bc5d4d5d72631767b1fa}\label{_daa_8cpp_aa2d73aa1faa2bc5d4d5d72631767b1fa}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!inter@{inter}}
+\index{inter@{inter}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{inter()}{inter()}}
+{\footnotesize\ttfamily void inter (\begin{DoxyParamCaption}\item[{\hyperlink{structsegment}{segment}}]{s1,  }\item[{\hyperlink{structsegment}{segment}}]{s2 }\end{DoxyParamCaption})}
+
+
+
+Find intersection point of two line segments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & segment 1 \\
+\hline
+{\em s2} & segment 2 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_daa_8cpp_aadfd68f65ad98aaca6e0cae78f1a557d}\label{_daa_8cpp_aadfd68f65ad98aaca6e0cae78f1a557d}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!Left\+Rotate@{Left\+Rotate}}
+\index{Left\+Rotate@{Left\+Rotate}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{Left\+Rotate()}{LeftRotate()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ Left\+Rotate (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Left rotation for balancing tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Left rotate this node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a06bc3195780d7353aea3f1d1d7cefe0b}\label{_daa_8cpp_a06bc3195780d7353aea3f1d1d7cefe0b}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!Left\+Rotate1@{Left\+Rotate1}}
+\index{Left\+Rotate1@{Left\+Rotate1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{Left\+Rotate1()}{LeftRotate1()}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ Left\+Rotate1 (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+left rotation for balancing 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Left rotate node t. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status\+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_daa_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!main@{main}}
+\index{main@{main}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+main function 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a119c3cf87f66cae269d1deeb9fdfcd61}\label{_daa_8cpp_a119c3cf87f66cae269d1deeb9fdfcd61}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!max\+Node@{max\+Node}}
+\index{max\+Node@{max\+Node}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{max\+Node()}{maxNode()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ max\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Finding the maximum node in a subtree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Find max node in t\textquotesingle{}s subtree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_ae724d8c86e91376430d5443b9256e55a}\label{_daa_8cpp_ae724d8c86e91376430d5443b9256e55a}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!max\+Node1@{max\+Node1}}
+\index{max\+Node1@{max\+Node1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{max\+Node1()}{maxNode1()}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ max\+Node1 (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+find the maximum node in a subtree 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & find max node in t\textquotesingle{}s subtree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status\+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a69e6a83fb01564768530bdba4e8e8410}\label{_daa_8cpp_a69e6a83fb01564768530bdba4e8e8410}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!min\+Node@{min\+Node}}
+\index{min\+Node@{min\+Node}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{min\+Node()}{minNode()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ min\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Finding the minimum node in a subtree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Find min node in t\textquotesingle{}s subtree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a1e97c8b9bc5506e9838c1f0b969a6b0c}\label{_daa_8cpp_a1e97c8b9bc5506e9838c1f0b969a6b0c}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!min\+Node1@{min\+Node1}}
+\index{min\+Node1@{min\+Node1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{min\+Node1()}{minNode1()}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ min\+Node1 (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+find the minimum node in a subtree 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & find min node in t\textquotesingle{}s subtree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status\+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_af620efbe679c0fb2e8a9762657e753fb}\label{_daa_8cpp_af620efbe679c0fb2e8a9762657e753fb}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!predecessor@{predecessor}}
+\index{predecessor@{predecessor}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{predecessor()}{predecessor()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ predecessor (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{root,  }\item[{\hyperlink{class_node}{Node} $\ast$}]{t,  }\item[{\hyperlink{class_node}{Node} $\ast$}]{pred }\end{DoxyParamCaption})}
+
+
+
+Find the next lower node for the given node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & root of the tree. \\
+\hline
+{\em t} & find t\textquotesingle{}s predecessor. \\
+\hline
+{\em pred} & store the predecessor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a06d6078806966cbe7006c7fe048f5813}\label{_daa_8cpp_a06d6078806966cbe7006c7fe048f5813}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!predecessor1@{predecessor1}}
+\index{predecessor1@{predecessor1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{predecessor1()}{predecessor1()}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ predecessor1 (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{root,  }\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{t,  }\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{pred,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+find the next lower node 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & root of the tree. \\
+\hline
+{\em t} & Find t\textquotesingle{}s predecessor. \\
+\hline
+{\em pred} & store predecessor. \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status\+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a04d0f63ecb015ca2249c343fa1049982}\label{_daa_8cpp_a04d0f63ecb015ca2249c343fa1049982}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!Rotate\+Right@{Rotate\+Right}}
+\index{Rotate\+Right@{Rotate\+Right}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{Rotate\+Right()}{RotateRight()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ Rotate\+Right (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Right rotation for balancing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Right rotate this node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a682a707a24efc804a0e6c6c0c3c647d4}\label{_daa_8cpp_a682a707a24efc804a0e6c6c0c3c647d4}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!Rotate\+Right1@{Rotate\+Right1}}
+\index{Rotate\+Right1@{Rotate\+Right1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{Rotate\+Right1()}{RotateRight1()}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ Rotate\+Right1 (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+right rotation for balancing 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & right rotate node t. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status\+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a1921fa8808c10944e442aca9567f5ed5}\label{_daa_8cpp_a1921fa8808c10944e442aca9567f5ed5}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!successor@{successor}}
+\index{successor@{successor}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{successor()}{successor()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ successor (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{root,  }\item[{\hyperlink{class_node}{Node} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Find the next higher node for the given node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & root of the tree. \\
+\hline
+{\em t} & find t\textquotesingle{}s successor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_daa_8cpp_a0eb152b9c1c879ed9ae23cb49678476d}\label{_daa_8cpp_a0eb152b9c1c879ed9ae23cb49678476d}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!successor1@{successor1}}
+\index{successor1@{successor1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{successor1()}{successor1()}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ successor1 (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{root,  }\item[{\hyperlink{class_status_node}{Status\+Node} $\ast$}]{t,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+find the next higher node 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & root of the tree. \\
+\hline
+{\em t} & find t\textquotesingle{}s successor. \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status\+Node$\ast$ 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_daa_8cpp_a617a47c70795bcff659815ad0efd2266}\label{_daa_8cpp_a617a47c70795bcff659815ad0efd2266}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!counter@{counter}}
+\index{counter@{counter}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily int counter =0}
+
+\mbox{\Hypertarget{_daa_8cpp_ac60530ff5b2c73e3c3f5536cf63d8d71}\label{_daa_8cpp_ac60530ff5b2c73e3c3f5536cf63d8d71}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!deleted@{deleted}}
+\index{deleted@{deleted}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{deleted}{deleted}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ deleted}
+
+
+
+for storing the latest line segment deleted. 
+
+\mbox{\Hypertarget{_daa_8cpp_a30ec10c21d5b68b41588e57dc86d13f0}\label{_daa_8cpp_a30ec10c21d5b68b41588e57dc86d13f0}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!inserted@{inserted}}
+\index{inserted@{inserted}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{inserted}{inserted}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ inserted}
+
+
+
+for storing the latest line segment inserted. 
+
+\mbox{\Hypertarget{_daa_8cpp_af7f8f4a4e39e09fdb5e9f02330ecabef}\label{_daa_8cpp_af7f8f4a4e39e09fdb5e9f02330ecabef}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!points@{points}}
+\index{points@{points}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily int points =0}
+
+\mbox{\Hypertarget{_daa_8cpp_a3159a6cb11510978af2025ca2ed85745}\label{_daa_8cpp_a3159a6cb11510978af2025ca2ed85745}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!pred@{pred}}
+\index{pred@{pred}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{pred}{pred}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ pred}
+
+\mbox{\Hypertarget{_daa_8cpp_a8f742a514df155060c3a2cc0457680a9}\label{_daa_8cpp_a8f742a514df155060c3a2cc0457680a9}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!remaining@{remaining}}
+\index{remaining@{remaining}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{remaining}{remaining}}
+{\footnotesize\ttfamily int remaining =0}
+
+\mbox{\Hypertarget{_daa_8cpp_a04b069144d927df3c1d330b587c16e36}\label{_daa_8cpp_a04b069144d927df3c1d330b587c16e36}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!root1@{root1}}
+\index{root1@{root1}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{root1}{root1}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ root1 =N\+U\+LL}
+
+
+
+Root of the tree for event queue. 
+
+\mbox{\Hypertarget{_daa_8cpp_af4a0eced0b119c2e71e14e734709c96c}\label{_daa_8cpp_af4a0eced0b119c2e71e14e734709c96c}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!root2@{root2}}
+\index{root2@{root2}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{root2}{root2}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ root2 =N\+U\+LL}
+
+
+
+Root of the tree for status queue. 
+
+\mbox{\Hypertarget{_daa_8cpp_affbaa5a4441943c51c582ebc466ea5e9}\label{_daa_8cpp_affbaa5a4441943c51c582ebc466ea5e9}} 
+\index{Daa.\+cpp@{Daa.\+cpp}!succ@{succ}}
+\index{succ@{succ}!Daa.\+cpp@{Daa.\+cpp}}
+\subsubsection{\texorpdfstring{succ}{succ}}
+{\footnotesize\ttfamily \hyperlink{class_status_node}{Status\+Node}$\ast$ succ}
+
